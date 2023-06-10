@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LTNM Design Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <button id="nightModeButton" class="night-mode-button slider" onclick="toggleNightMode()"></button>
+
+  <header>
+    <h1 class="text">Design Portfolio</h1>
+    <p>TO PUNISH AND ENSLAVE 👾</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <div class="profile">
+      <img src="projects/oo.jpg" alt="Your Name" id="profileImage">
+      <h2>Don Adrianne Sanchez</h2>
+      <p class="subtext">I draw robots, at home. 🤖</p>
+    </div>
+    <h2>About me</h2>
+
+    <section id="about" class="about-section">
+      <h2 class="about-title">Digital Artist •<span class="web-developer">    Deep Personal Profile</span></h2>
+      <div class="about-content">
+        <div class="profile-picture">
+          <img src="projects/oo.jpg" alt="Your Profile Picture" id="aboutImage">
+        </div>
+        <div class="about-text">
+          <p>Hi! I'm Don, a freelance Graphic Designer and Programmer. I have a passion for creating visually stunning designs and developing functional websites and applications.
+            I specialize in utilizing tools such as Photoshop, Illustrator, and Premiere Pro to bring my creative ideas to life. With these skills, I can create captivating graphics, engaging illustrations, and professional video edits.
+            Whether it's designing a logo, developing a website, or crafting an eye-catching video, I always strive for excellence in every project I undertake. I believe in the power of effective design and its ability to convey messages, evoke emotions, and leave a lasting impact.
+            If you're interested in collaborating or have any design or programming needs, I'd love to connect with you. Let's work together to bring your ideas to reality! 🤖</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h3 class="skills-heading">Skills</h3>
+      <div class="skills">
+        <div class="skill">
+          <img src="skillset/PS.jpg.png" alt="Photoshop">
+          <h4>Photoshop</h4>
+        </div>
+        <div class="skill">
+          <img src="skillset/adobe-Illustrator-logo-3-1.png" alt="Illustrator">
+          <h4>Illustrator</h4>
+        </div>
+        <div class="skill">
+          <img src="skillset/Adobe_Premiere_Pro_CC_icon.svg.png" alt="Premiere Pro">
+          <h4>Premiere Pro</h4>
+        </div>
+        <div class="skill">
+          <img src="skillset/html2.png" alt="HTML">
+          <h4>HTML</h4>
+        </div>
+        <div class="skill">
+          <img src="skillset/css-3-logo-023C1A7171-seeklogo.com.png" alt="CSS">
+          <h4>CSS</h4>
+        </div>
+        <div class="skill">
+          <img src="skillset/javascript-logo-big.png" alt="JavaScript">
+          <h4>JavaScript</h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-container">
+      <h2>Projects <span id="projectsCount" class="project-count">(0)</span></h2>
+      <div class="projects-container">
+      <!-- ... Rest of the project elements ... -->
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/13.jpg" alt="Project 17 Image" onclick="expandImage(this)">
+        <h3>BAAL</h3>
+        <p>Electro Archon ⚡</p>
+        <div class="project-details">
+          <p>Genshin Impact Fanart</p>
+        </div>
+      </div>
+        <div class="project" onclick="toggleProjectDetails(this)">
+            <img src="projects/ppg1.jpg" alt="Project 18 Image" onclick="expandImage(this)">
+            <h3>BLOSSOM</h3>
+            <p>Commander and the Leader</p>
+          </div>
+        <div class="project" onclick="toggleProjectDetails(this)">
+            <img src="projects/ppg2.jpg" alt="Project 19 Image" onclick="expandImage(this)">
+            <h3>BUTTERCUP</h3>
+            <p>The strongest fighter</p>
+          </div>
+          <div class="project" onclick="toggleProjectDetails(this)">
+            <img src="projects/ppg3.jpg" alt="Project 20 Image" onclick="expandImage(this)">
+            <h3>BUBBLES</h3>
+            <p>The joy and the laughter</p>
+          </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/proj1.png" alt="Project1 Image" onclick="expandImage(this)">
+        <h3>GREEK Y2K</h3>
+        <p>Year 2000 with chrome effect</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/proj2.jpg" alt="Project 2 Image" onclick="expandImage(this)">
+        <h3>CHIBI BUTTERCUP</h3>
+        <p>Designed for LTNM Powepuff Girls Collection</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/proj3.jpg" alt="Project 3 Image" onclick="expandImage(this)">
+        <h3>Reze</h3>
+        <p>The bomb devil 'Chainsawman'</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/proj4.jpg" alt="Project 4 Image" onclick="expandImage(this)">
+        <h3>Amara</h3>
+        <p>Member of Schoolgirl Mercenaries</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/proj5.png" alt="Project 5 Image" onclick="expandImage(this)">
+        <h3>INKBLEED</h3>
+        <p>Typography Design for a Streetwear Brand</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/proj6.png" alt="Project 6 Image" onclick="expandImage(this)">
+        <h3>NEON BLEED</h3>
+        <p>Typography Design for a Streetwear Brand</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/BETTER BY NOW.png" alt="Project 7 Image" onclick="expandImage(this)">
+        <h3>HARD RESET</h3>
+        <p>Collaborative design with NEMESIS Clothing</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/brutalist frontpage.png" alt="Project 8 Image" onclick="expandImage(this)">
+        <h3>TKMS</h3>
+        <p>Technology Shall Alter Future Probabilities</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/chainsaw3.png" alt="Project 9 Image" onclick="expandImage(this)">
+        <h3>Chainsawman</h3>
+        <p>Deathbringer, Chainsawman!</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/blk.png" alt="Project 10 Image" onclick="expandImage(this)">
+        <h3>MIKAY</h3> 
+        <p>Food Business Logo/Branding</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/devil.png" alt="Project 11 Image" onclick="expandImage(this)">
+        <h3>Reiko Ishida</h3>
+        <p>Original Character</p>
+        <p>Member of Schoolgirl Mercenaries</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/filter.png" alt="Project 12 Image" onclick="expandImage(this)">
+        <h3>Grimreaper</h3>
+        <p>Director of Wansheng Funeral, Hu Tao!</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/ssssss.png" alt="Project 13 Image" onclick="expandImage(this)">
+        <h3>YUBI KYUUBI</h3>
+        <p>Logo/Branding Project</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/yu2.wht.png" alt="Project 14 Image" onclick="expandImage(this)">
+        <h3>YUBI MOBILE SUIT</h3>
+        <p>Logo/Branding Project</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/12.jpg" alt="Project 15 Image" onclick="expandImage(this)">
+        <h3>WALKSLOWLY TECH</h3>
+        <p>Character Design/Branding Project for WALKSLOWLY</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/CHROME-Y2K.png" alt="Project 16 Image" onclick="expandImage(this)">
+        <h3>CHROME</h3>
+        <p>Y2K Design</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/14.jpg" alt="Project 21 Image" onclick="expandImage(this)">
+        <h3>REPAIR BOT</h3>
+        <p>Character Design/Branding Project for WALKSLOWLY</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/15.jpg" alt="Project 22 Image" onclick="expandImage(this)">
+        <h3>NISSAN GT-R 1969 C10 SKYLINE</h3>
+        <p>LoFi Spotify Album Cover</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/12111.png" alt="Project 23 Image" onclick="expandImage(this)">
+        <h3>K-EGG POINT</h3>
+        <p>Commission Wall Art Concept for K-Egg Dumaguete</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/joregen1.png" alt="Project 24 Image" onclick="expandImage(this)">
+        <h3>SQUID</h3>
+        <p>Commission Merch Logo 'Embroided'</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/a1.png" alt="Project 24 Image" onclick="expandImage(this)">
+        <h3>SMOKEY GRADIENT</h3>
+        <p>Typography Design</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/a2.png" alt="Project 24 Image" onclick="expandImage(this)">
+        <h3>Retro Font Design</h3>
+        <p>Original Retro Font Design</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/a3.png" alt="Project 24 Image" onclick="expandImage(this)">
+        <h3>MINIMALIST MENU DESIGN</h3>
+        <p>Vector Menu Design for K-Egg Dumaguete</p>
+      </div>
+      <div class="project" onclick="toggleProjectDetails(this)">
+        <img src="projects/a4.png" alt="Project 24 Image" onclick="expandImage(this)">
+        <h3>OMORPHOS</h3>
+        <p>Brutalism Montreal Concept</p>
+      </div>
+      <!-- Add more project sections as needed -->
+    </div>
+  </section>
+  
+  
+  <footer>
+    <section id="contact"></section>
+    <h2>Contact Me:</h2>
+    <ul class="contact-list">
+      <li><a href="https://www.facebook.com/donsanchez.noob/" target="_blank">Facebook</a></li>
+      <li><a href="https://www.instagram.com/d3a8s7/" target="_blank">Instagram</a></li>
+      <li><a href="https://discordapp.com/users/5098" target="_blank">Discord</a></li>
+      <li><a href="realdonsanchez@gmail.com">Email</a></li>
+      <li><a href="https://www.fiverr.com/latinamoart" target="_blank">Fiverr</a></li>
+    </ul>
+    <p>&copy; 2023 LTNM Works. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+<script>
+   function toggleNightMode() {
+      var body = document.body;
+      body.classList.toggle("dark-mode");
+
+      var profileImage = document.getElementById("profileImage");
+      var aboutImage = document.getElementById("aboutImage");
+      if (body.classList.contains("dark-mode")) {
+        profileImage.src = "projects/oop.jpg";
+        aboutImage.src = "projects/oop.jpg";
+      } else {
+        profileImage.src = "projects/oo.jpg";
+        aboutImage.src = "projects/oo.jpg";
+      }
+    }
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const projectsCount = document.getElementById('projectsCount');
+    const projects = document.getElementsByClassName('project');
+    projectsCount.textContent = '(' + projects.length + ')';
+  });
+</script>
+</body>
+</html>

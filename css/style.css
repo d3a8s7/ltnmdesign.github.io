@@ -1,0 +1,442 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    margin-left: 20px; /* Add left margin */
+    margin-right: 20px; /* Add right margin */
+  }
+/* Dark mode */
+body.dark-mode {
+  background-color: #252525;
+  color: #fff;
+}
+
+.dark-mode .about-section {
+  background-color: #252525;
+  border-color: #ccc;
+}
+
+.dark-mode .about-section h2,
+.dark-mode .about-section p {
+  color: #fff;
+}
+
+.dark-mode .projects-container {
+  background-color: #252525;
+}
+  .text{
+    background: -webkit-linear-gradient(45deg, #09009F, #ff7f50 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Header styles */
+  header {
+    background-image: url("../projects/coverphtoto.png");
+    background-size: cover;
+    background-position: 50% 30%;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    margin-left: -20px; /* Remove the left margin */
+    margin-right: -20px; /* Remove the right margin */
+}
+
+header h1 {
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px; /* Reduce the margin-bottom to create less space */
+}
+
+header h2 {
+    font-size: 48px; /* Adjust the font size as needed */
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+  
+  /* Section styles */
+  section h2,
+  section h3 {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+  }
+  
+  
+  /* Navigation styles */
+  nav {
+    background-color: rgba(102, 102, 102, 0.5); /* Use rgba to set the background color with opacity */
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ff7f50;
+  }
+  
+  /* Project styles */
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .project {
+    flex: 0 0 calc(22% - 20px);
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0px solid #333; /* Add or modify this line to adjust the border width */
+  }
+  
+  .dark-mode .project {
+    background-color: #666; /* Change this color to the desired gray color in dark mode */
+  }
+  
+  .project:nth-child(3n) {
+    margin-right: 0;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .project {
+      flex: 0 0 100%;
+    }
+  }
+  
+  .project img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .project img:hover {
+    transform: scale(1.1);
+  }
+  
+  .project h3 {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #424242;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: rgba(102, 102, 102, 0.5); /* Use rgba to set the background color with opacity */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    clear: both;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+  
+  footer h2 {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+  }
+  
+  .contact-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+  }
+  
+  .contact-list li {
+    margin: 0 10px;
+  }
+  
+  .contact-list li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the skills container horizontally */
+    align-items: center; /* Center the skills container vertically */
+    margin-top: 20px;
+  }
+  
+  .skill {
+    flex: 0 0 calc(5% - 20px);
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-radius: 0px;
+    box-shadow: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill:hover {
+    transform: scale(1.35); /* Adjust the scale factor as desired */
+  }
+  
+  .skill:last-child {
+    margin-right: 0;
+  }
+  
+  .skill img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .skill h4 {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;   
+  }
+  /* Profile styles */
+  .profile {
+    text-align: center;
+    margin-bottom: 40px; /* Increase the margin-bottom value to create more space */
+  }
+  
+  .profile img {
+    width: 170px; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .profile h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    margin-bottom: 0px; /* Add some margin-bottom for separation */
+  }
+  .subtext {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #666;
+  }
+  
+  h2 {
+    margin-bottom: 20px; /* Add some margin-bottom to separate the "Welcome to my Portfolio!" section from the profile section */
+  }
+  
+  #about {
+    text-align: justify; /* Add this line to justify the text */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+  }
+  
+  #about h2 {
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+  }
+  
+  #about p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #858585;
+  }
+  .expanded-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    overflow-y: auto;
+  }
+  
+  .expanded-image img {
+    max-width: 90%;
+    max-height: 90%;
+    margin-bottom: 20px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .about-title {
+    margin-top: 10px; /* Adjust the margin-top value to move the text higher */
+  }
+
+  .about-section {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-picture {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture img {
+    width: 200px; /* Adjust the width as needed */
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: transform 0.3s, background-image 0s; /* Add transition for background-image */
+  }
+  
+  .profile-picture img:hover {
+  transform: scale(1.1);
+  background-image: none; /* Remove the background-image property */
+}
+  
+  .about-text {
+    flex-grow: 1;
+  }
+  .web-developer {
+    color: #999999; /* Replace with your desired lighter color */
+    font-size: 0.8em; /* Adjust the font size as needed */
+  }
+  .skills-heading {
+  text-align: center;
+  margin-top: 50px; /* Adjust the margin-top value as needed */
+  margin-bottom: 50px; /* Adjust the margin-bottom value as needed */
+}
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+  --profile-text-color: #000;
+}
+
+/* Night mode styles */
+body.night-mode {
+  --background-color: #111;
+  --text-color: #fff;
+  --font-color: #ff7f50; /* Light gray color for fonts in dark mode */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Apply font color to project names and "Digital Artist" */
+.project h3,
+.project p.text {
+  color: var(--font-color);
+}
+
+.project-count {
+  font-weight: normal;
+}
+
+/* Night mode button styles */
+.night-mode-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.night-mode-button.slider {
+  padding: 0;
+  width: 50px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #888;
+  transition: background-color 0.3s;
+}
+
+.night-mode-button.slider:before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--background-color);
+  transition: transform 0.3s;
+}
+
+.night-mode-button.slider.on {
+  background-color: #2196F3;
+}
+
+.night-mode-button.slider.on:before {
+  transform: translateX(20px);
+}
